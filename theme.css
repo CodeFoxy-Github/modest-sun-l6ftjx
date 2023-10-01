@@ -1,0 +1,69 @@
+@import url(tokens.css);
+@import url(colors.module.css);
+@import url(typography.module.css);
+@import url(theme.light.css) (prefers-color-scheme: light);
+@import url(theme.dark.css) (prefers-color-scheme: dark);
+.ipt {
+  text-align: left;
+  color: black;
+}
+body {
+  font-family: "Google Sans", sans-serif;
+}
+.svg-icon {
+  display: inline-flex;
+  align-self: center;
+}
+.svg-icon svg {
+  height: 1em;
+  width: 1em;
+}
+.svg-icon.svg-baseline svg {
+  top: 0.125em;
+  position: relative;
+}
+/*-----------------*/
+/*-----------------*/
+/*-----------------*/
+/*PROTOTYPE EXAMPLE*/
+body {
+  padding: 8px;
+  font-size: 16px;
+  font-family: arial;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 16px 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: normal;
+  position: relative;
+  color: black;
+}
+/*H Tag Sizing*/
+h1 {
+  font-size: 64px;
+}
+h2 {
+  font-size: 48px;
+}
+h3 {
+  font-size: 32px;
+}
+h4 {
+  font-size: 24px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 8px;
+}

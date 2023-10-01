@@ -11,13 +11,19 @@
   "tasks": {
     "start": {
       "name": "start",
-      "command": "yarn start",
-      "runAtStart": true
+      "command": "rm bundle.js | npx rollup -p @rollup/plugin-node-resolve index.js -o bundle.js | npx http-server",
+      "runAtStart": true,
+      "preview": {
+        "port": 8081
+      }
     },
     "build": {
       "name": "build",
-      "command": "yarn build",
-      "runAtStart": false
+      "command": "rm bundle.js | npx rollup -p @rollup/plugin-node-resolve index.js -o bundle.js | npx http-server",
+      "runAtStart": false,
+      "preview": {
+        "port": 8080
+      }
     }
   }
 }
